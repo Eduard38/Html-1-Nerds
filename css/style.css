@@ -28,6 +28,7 @@
   --link-hover: #dfdfdf;
   --link-focus: #d5d5d5;
   --social-gray: #e1e1e1;
+  --basic-shadow: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -207,7 +208,7 @@ header {
   left: 5px;
   width: 15px;
   height: 15px;
-  background-image: url(../img/cart-icon.svg);
+  background-image: url(../img/icons/cart-icon.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -269,7 +270,7 @@ header {
 }
 
 .slider-controls .current {
-  background: url(../img/slider-current.svg) no-repeat center;
+  background: url(../img/icons/slider-current.svg) no-repeat center;
   background-size: 8px 8px;
   background-color: var(--basic-white);
 }
@@ -689,11 +690,6 @@ header {
   margin: 0;
 }
 
-.iframe-wrapper {
-  display: block;
-  margin: 0 auto;
-}
-
 
 /* Filters */
 
@@ -857,7 +853,7 @@ header {
   left: -33px;
   width: 23px;
   height: 23px;
-  background: url(../img/checkbox-off.svg) no-repeat center center;
+  background: url(../img/icons/checkbox-off.svg) no-repeat center center;
   opacity: 0.4;
 }
 
@@ -868,7 +864,7 @@ header {
   left: -33px;
   width: 25px;
   height: 23px;
-  background: url(../img/checkbox-on.svg) no-repeat center center;
+  background: url(../img/icons/checkbox-on.svg) no-repeat center center;
   opacity: 0.4;
 }
 
@@ -1213,15 +1209,15 @@ header {
 }
 
 .vk {
-  background-image: url(../img/vk-icon.svg)
+  background-image: url(../img/icons/vk-icon.svg)
 }
 
 .fb {
-  background-image: url(../img/fb-icon.svg);
+  background-image: url(../img/icons/fb-icon.svg);
 }
 
 .insta {
-  background-image: url(../img/insta-icon.svg);
+  background-image: url(../img/icons/insta-icon.svg);
 }
 
 .social-link:hover {
@@ -1238,25 +1234,17 @@ header {
 
 
 .modal {
-  display: none;
-  /* position: relative; */
-  /* width: 1440px; */
-  width: 100%;
-}
-
-.feedback-form {
-  position: absolute;
-  top: 1650px;
-  left: 200px;
-  width: 960px;
-  height: 590px;
-  margin: 0 auto;
-  margin-bottom: 68px;
-  padding: 65px 100px;
-  background: var(--basic-white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  box-sizing: border-box;
-  z-index: 1000;
+    width: 760px;
+    margin: 0 auto;
+    padding: 63px 100px 84px 100px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--basic-white);
+    box-shadow: 0 20px 40px -10px var(--basic-black);
+    z-index: 4;
+    display: none;
 }
 
 .feedback-form-title {
