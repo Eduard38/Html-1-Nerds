@@ -877,6 +877,12 @@ header {
   opacity: 1;
 }
 
+/* Доступность чекбоксов с клавиатуры */
+.filter-input-checkbox:focus + .filter-label::after,  
+.filter-input-checkbox:focus + .filter-label::before {
+  opacity: 1;
+}
+
 .filter-sort-list {
   display: flex;
   flex-wrap: wrap;
