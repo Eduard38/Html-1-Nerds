@@ -1388,6 +1388,10 @@ header {
     display: none;
 }
 
+.modal-show {
+  display: block;
+}
+
 .feedback-form-title {
   height: 80px;
   /* padding-top: 63px; */
