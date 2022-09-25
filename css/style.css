@@ -1384,7 +1384,7 @@ header {
     background-color: var(--basic-white);
     -webkit-box-shadow: 0 20px 40px -10px var(--basic-black);
             box-shadow: 0 20px 40px -10px var(--basic-black);
-    z-index: 4;
+    z-index: 20;
     display: none;
 }
 
