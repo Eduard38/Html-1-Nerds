@@ -30,7 +30,7 @@ modalButtonClose.addEventListener('click', function() {
 });
 
 form.addEventListener('submit', function(evt) {
-    if (!login.value || !password.value) {
+    if (!login.value || !mail.value) {
         evt.preventDefault();
         modal.classList.add('modal-error');
     } else {
