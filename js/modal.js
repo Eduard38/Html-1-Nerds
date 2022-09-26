@@ -18,7 +18,7 @@ modalButtonOpen.addEventListener('click', function(evt) {
     modal.classList.add('modal-show');
     if (storage) {
         login.value = storage;
-        password.focus();
+        mail.focus();
     } else {
         login.focus();
     }
@@ -26,11 +26,13 @@ modalButtonOpen.addEventListener('click', function(evt) {
 
 modalButtonClose.addEventListener('click', function() {
     modal.classList.remove('modal-show');
+    modal.classList.remove('modal-error');
 });
 
 form.addEventListener('submit', function(evt) {
     if (!login.value || !password.value) {
         evt.preventDefault();
+        modal.classList.add('modal-error');
     } else {
         localStorage.setItem('login', login.value);
     }
