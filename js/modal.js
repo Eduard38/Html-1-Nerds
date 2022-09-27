@@ -40,5 +40,6 @@ form.addEventListener('submit', function(evt) {
 window.addEventListener('keydown', function(evt) {
     if (evt.key === 'Escape') {
         modal.classList.remove('modal-show');
+        modal.classList.remove('modal-error');
     }
 });
