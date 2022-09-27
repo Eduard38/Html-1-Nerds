@@ -31,7 +31,9 @@ modalButtonClose.addEventListener('click', function() {
 form.addEventListener('submit', function(evt) {
     if (!login.value || !mail.value) {
         evt.preventDefault();
-        modal.classList.add('modal-error');
+        loginPopup.classList.remove("modal-error");
+        loginPopup.offsetWidth = loginPopup.offsetWidth;
+        loginPopup.classList.add("modal-error");
     } else {
         localStorage.setItem('login', login.value);
     }
