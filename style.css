@@ -853,7 +853,7 @@ header {
   left: -33px;
   width: 23px;
   height: 23px;
-  background: url(../img/checkbox-off.svg) no-repeat center center;
+  background: url("../img/icons/checkbox-off.svg") no-repeat center center;
   opacity: 0.4;
 }
 
@@ -864,7 +864,7 @@ header {
   left: -33px;
   width: 25px;
   height: 23px;
-  background: url(../img/checkbox-on.svg) no-repeat center center;
+  background: url("../img/icons/checkbox-on.svg") no-repeat center center;
   opacity: 0.4;
 }
 
